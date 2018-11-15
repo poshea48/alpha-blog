@@ -1,3 +1,4 @@
+<%= react_component('Colorpicker') %>
 <% obj.each do |article| %>
   <%= react_component("Article", { title:       article.title,
                                    path:        article_path(article),
@@ -6,5 +7,5 @@
                                    created_at:  article.created_at,
                                    updated_at:  article.updated_at }) %>
 
-        
+
 <% end %>
